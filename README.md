@@ -4,8 +4,6 @@ This simple pipelines uses webhooks to get notified of new images uploaded to Dr
 
 This code is based on the 'Dropbox Webhooks' example provided in [dropbox/mdwebhook](https://github.com/dropbox/mdwebhook). Read more about webhooks and this example on [the Dropbox developers site](https://www.dropbox.com/developers/webhooks/tutorial).
 
-You can try the example yourself by visiting [mdwebhook.herokuapp.com](https://mdwebhook.herokuapp.com).
-
 ## Running the sample yourself
 
 This sample was built with Heroku in mind as a target, so the simplest way to run the sample is via `foreman`:
@@ -15,6 +13,8 @@ This sample was built with Heroku in mind as a target, so the simplest way to ru
 3. Launch the app via `foreman start` or deploy to Heroku.
 
 You can also just set the required environment variables (using `.env_sample` as a guide) and run the app directly with `python app.py`.
+
+Take into account that Dropbox's webhooks can't communicate with 'localhost'.
 
 ## Deploy on Heroku
 
