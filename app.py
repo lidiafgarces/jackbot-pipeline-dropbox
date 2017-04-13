@@ -101,7 +101,7 @@ def process_user(uid):
             params = {
                 "description": "We have detected a potential terrorist attack. We will ask you to locate some pictures and describe what is happening on them. If you don't know the answer, please answer 'I don't know'. ",
                 "webhook_url": {
-                    "host": "protected-garden-88497.herokuapp.com",
+                    "host": get_url(''),
                     "path": "/answer"
                 },
                 "items": [{"item_answer_type": "text",
@@ -117,7 +117,7 @@ def process_user(uid):
             
             print params
             headers = {"Content-type": "application/json"}
-            conn = httplib.HTTPConnection("serene-sea-69467.herokuapp.com")
+            conn = httplib.HTTPConnection(os.environ['API_ENDPOINT'])
             conn.request("POST", "/api/tasks", json.dumps(params), headers)
             response = conn.getresponse()
             print response.read().decode()

@@ -15,6 +15,10 @@
     "APP_SECRET": {
       "description": "Your Dropbox app secret (found at dropbox.com/developers/apps)"
     },
+    },
+    "API_ENDPOINT": {
+      "description": "Endpoint for JackBot API"
+    },
     "FLASK_SECRET_KEY": {
       "description": "A secret key for cookie signing",
       "generator": "secret"
