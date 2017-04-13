@@ -1,6 +1,6 @@
 # Dropbox Pipeline for Jackbot
 
-This simple pipelines uses webhooks to get notified of new images uploaded to Dropbox. It then creates a new task and add it to Jackbot Platform.
+This simple pipelines uses webhooks to get notified of new images uploaded to Dropbox. It then creates a new task and add it to Jackbot Platform. When the task is completed in Jackbot, it will receive the answer though a webhook and it will save into the Redis database.
 
 This code is based on the 'Dropbox Webhooks' example provided in [dropbox/mdwebhook](https://github.com/dropbox/mdwebhook). Read more about webhooks and this example on [the Dropbox developers site](https://www.dropbox.com/developers/webhooks/tutorial).
 
