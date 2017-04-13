@@ -4,8 +4,6 @@ This simple pipelines uses webhooks to get notified of new images uploaded to Dr
 
 This code is based on the 'Dropbox Webhooks' example provided in [dropbox/mdwebhook](https://github.com/dropbox/mdwebhook). Read more about webhooks and this example on [the Dropbox developers site](https://www.dropbox.com/developers/webhooks/tutorial).
 
-You can try the example yourself by visiting [mdwebhook.herokuapp.com](https://mdwebhook.herokuapp.com).
-
 ## Running the sample yourself
 
 This sample was built with Heroku in mind as a target, so the simplest way to run the sample is via `foreman`:
@@ -16,22 +14,10 @@ This sample was built with Heroku in mind as a target, so the simplest way to ru
 
 You can also just set the required environment variables (using `.env_sample` as a guide) and run the app directly with `python app.py`.
 
+Take into account that Dropbox's webhooks can't communicate with 'localhost'.
+
 ## Deploy on Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-=======
 You can deploy directly to Heroku with the button below. First you'll need to create an API app via the [App Console](https://www.dropbox.com/developers/apps). Make sure your app has access to files (not just datastores), and answer "Yes - My app only needs access to files it creates" to ensure your app gets created with "App folder" permissions.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-Once you've deployed, you can easily clone the app and make modifications:
-
-```
-$ heroku clone -a new-app-name
-...
-$ vim index.js
-$ git add .
-$ git commit -m "update index.js"
-$ git push heroku master
-...
-```

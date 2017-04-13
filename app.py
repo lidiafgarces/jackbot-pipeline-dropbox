@@ -101,7 +101,7 @@ def process_user(uid):
             params = {
                 "description": "We have detected a potential terrorist attack. We will ask you to locate some pictures and describe what is happening on them. If you don't know the answer, please answer 'I don't know'. ",
                 "webhook_url": {
-                    "host": get_url(''),
+                    "host": get_url('').replace('https://', ''),
                     "path": "/answer"
                 },
                 "items": [{"item_answer_type": "text",
