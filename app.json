@@ -1,7 +1,7 @@
 {
   "name": "Dropbox Webhook Example",
   "repository": "https://github.com/lidiafgarces/jackbot-pipeline-dropbox/edit/master/app.json",
-  "keywords": ["dropbox", "python", "flask", "jackbot],
+  "keywords": ["dropbox", "python", "flask", "jackbot"],
   "success_url": "/welcome",
   "addons": [
     "redistogo"
