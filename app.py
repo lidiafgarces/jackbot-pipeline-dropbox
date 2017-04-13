@@ -98,10 +98,13 @@ def process_user(uid):
             print public_url
 
             # Publish task
+            print 'My URL:'
+            print get_url('')
+
             params = {
                 "description": "We have detected a potential terrorist attack. We will ask you to locate some pictures and describe what is happening on them. If you don't know the answer, please answer 'I don't know'. ",
                 "webhook_url": {
-                    "host": get_url('').replace('https://', ''),
+                    "host": get_url(''),
                     "path": "/answer"
                 },
                 "items": [{"item_answer_type": "text",
